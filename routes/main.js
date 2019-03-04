@@ -27,7 +27,7 @@ router.post('/add-product',(req, res, next)=> {
     });
 });
 router.get('/products/:page', function(req, res, next) {
-    var perPage = 9
+    var perPage = 5
     var page = req.params.page || 1
 
     Product
