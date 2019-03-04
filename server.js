@@ -6,7 +6,7 @@ const mainRoutes = require('./routes/main');
 const app = express();
 
 app.use(mainRoutes);
-mongoose.connect('mongodb://prasad18:prasad18@ds357955.mlab.com:57955/product',{ useNewUrlParser: true },()=>{
+mongoose.connect('mongodb:///product',{ useNewUrlParser: true },()=>{
     console.log('successfully connected!!!');
 });
 
